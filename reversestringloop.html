@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // reversing the string staticlly(passing value directly)
+
+      function reversestring(inputstring) {
+        var newstring = "";
+        for (i = inputstring.length - 1; i >= 0; i--) {
+          newstring += inputstring[i];
+        }
+        console.log(newstring);
+      }
+      reversestring("hello welcome");
+      // reversing the string dynamically(taking value from the user)
+
+      var string = prompt("enter the string you want to reverse:");
+      var stringlength = string.length;
+      var newstring = "";
+      for (i = stringlength - 1; i >= 0; i--) {
+        newstring += string[i];
+      }
+      console.log(`${newstring}`);
+    </script>
+  </body>
+</html>
